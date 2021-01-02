@@ -1,49 +1,28 @@
-<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text" rel="stylesheet">
-<div id="main">
-  <div class="calculator">
-    <input type="text" id="screen">
-    <div class="calculator__row1">
-      <button class="button">Rad</button>
-      <button class="button">Deg</button>
+<div class="container">
+    <p>
+      This component works exactly like the calculator you know. Click any number to start calculating!
+    </p>
+    <div class="calculator">
+      <div class="calculator__display">0</div>
 
-      <h1 style="font-size: 200%; margin-left: 20px; margin-right: 20px">Smart Scientific Calculator</h1>
-      <button class="button" id="clean">AC</button>
-    </div>
-    <div class="calculator__row2">
-      <button class="button">sin</button>
-      <button class="button">cos</button>
-      <button class="button">tan</button>
-      <button class="button dark">7</button>
-      <button class="button dark">8</button>
-      <button class="button dark">9</button>
-      <button class="button">*</button>
-    </div>
-    <div class="calculator__row3">
-      <button class="button">x^</button>
-      <button class="button">pi</button>
-      <button class="button">%</button>
-      <button class="button dark">4</button>
-      <button class="button dark">5</button>
-      <button class="button dark">6</button>
-      <button class="button">/</button>
-    </div>
-    <div class="calculator__row4">
-      <button class="button">ln</button>
-      <button class="button">log</button>
-      <button class="button">x!</button>
-      <button class="button dark">1</button>
-      <button class="button dark">2</button>
-      <button class="button dark">3</button>
-      <button class="button">-</button>
-    </div>
-    <div class="calculator__row5">
-      <button class="button">&radic;<span class="over"></span></button>
-      <button class="button">(</button>
-      <button class="button">)</button>
-      <button class="button">.</button>
-      <button class="button dark">0</button>
-      <button class="button">=</button>
-      <button class="button">+</button>
+      <div class="calculator__keys">
+        <button class="key--operator" data-action="add">+</button>
+        <button class="key--operator" data-action="subtract">-</button>
+        <button class="key--operator" data-action="multiply">&times;</button>
+        <button class="key--operator" data-action="divide">÷</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>0</button>
+        <button data-action="decimal">.</button>
+        <button data-action="clear">AC</button>
+        <button class="key--equal" data-action="calculate">=</button>
+      </div>
     </div>
   </div>
-</div>
